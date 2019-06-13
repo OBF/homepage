@@ -23,7 +23,10 @@
                             <a href="https://twitter.com/search?f=tweets&q=%23bosc2019" target="_blank">#bosc2019</a>
                         </li>
                         <li class="network-item">
-                            <a href="https://mailman.open-bio.org/mailman/listinfo/bosc-announce"><img src="<?php echo get_bloginfo('template_url') ?>/img/icons/mailinglist.svg" width="60px"></a>
+                            <a href="https://groups.google.com/forum/#!forum/bosc-announce"><img src="<?php echo get_bloginfo('template_url') ?>/img/icons/mailinglist.svg" width="60px"></a>
+                        </li>
+                        <li class="network-item">
+                            <a href="https://gitter.im/OBF/BOSC_community" target="_blank">Gitter</a>
                         </li>
                         <li class="network-item">
                             <a href="http://youtube.com/c/OBFBOSC"><img src="<?php echo get_bloginfo('template_url') ?>/img/icons/youtube.svg" width="60px"></a>
