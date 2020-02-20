@@ -373,13 +373,14 @@ i {
 .news-section {
     background-color: #1b2e25;
     margin-top: 3%;
-    padding: 3% 2% 0 0;
+    padding: 2% 2% 2% 0;
     transition: 1s ease;
 }
 
 .news-section h1 {
     color: #88eef7;
     font-family: 'Montserrat', sans-serif;
+    margin-top:0;
 }
 
 .news-section img {
