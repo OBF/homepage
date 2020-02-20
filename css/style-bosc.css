@@ -1027,4 +1027,8 @@ tr:nth-child(1) {
     .bosc-footer-sub-section {
         grid-template-columns: 100%;
     }
+
+    .dates-sessions .wp-block-column {
+      flex-basis:100%;
+    }
 }
