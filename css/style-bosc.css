@@ -226,6 +226,10 @@ p.bosc-overview {
     margin-bottom: 0;
 }
 
+.dates-sessions .wp-block-column {
+  flex-basis:50%;
+}
+
 .dates-sessions .important-dates,
 .bosc-committee .bosc-organizing-committee,
 .bosc-previous-and-contact .bosc-contact {
@@ -243,8 +247,8 @@ p.bosc-overview {
     margin-right: 0;
 }
 
-.important-dates ul li {
-    margin-bottom: 10px;
+.dates-sessions .session-topics h2, .dates-sessions .important-dates h2 {
+  margin-top:0.4em;
 }
 
 .wp-block-button__link {
