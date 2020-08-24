@@ -7,33 +7,33 @@ function obf_scripts_styles() {
         wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '3.3.7', true );
     wp_enqueue_script( 'obf', get_template_directory_uri() . '/js/obf.js', array('jquery') );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '3.3.7' );
-    if ( is_page_template( 'about.php' ) ) {
+    if ( is_page( 'about' ) ) {
         wp_enqueue_style('style-about.css', get_template_directory_uri().'/css/style-about.css',false,'1.0','all');
     }
-    else if ( is_page_template( 'travel-awards.php' ) ) {
+    else if ( is_page( 'travel-awards' ) ) {
         wp_enqueue_style('style-travel-awards.css', get_template_directory_uri().'/css/style-travel-awards.css',false,'5.0.1','all');
     }
-    else if ( is_page_template( 'board.php' ) ) {
+    else if ( is_page( 'board' ) ) {
         wp_enqueue_style('style-board.css', get_template_directory_uri().'/css/style-board.css',false,'5.0.7','all');
     }
-    else if ( is_page_template( 'projects.php' ) ) {
+    else if ( is_page( 'projects' ) ) {
         wp_enqueue_style('style-projects.css', get_template_directory_uri().'/css/style-projects.css', false, '1.0','all');
     }
-    else if ( is_page_template( 'events.php' ) ) {
+    else if ( is_page( 'events' ) ) {
         wp_enqueue_style('style-events.css', get_template_directory_uri().'/css/style-events.css',false,'1.0','all');
     }
-    else if ( is_page_template( 'gsoc.php' ) ) {
+    else if ( is_page( 'gsoc' ) ) {
         wp_enqueue_style('style-gsoc.css', get_stylesheet_directory_uri().'/css/style-gsoc.css',false,'1.0','all');
     }
-    else if ( is_page_template( 'meeting-minutes.php' ) ) {
+    else if ( is_page( 'meeting-minutes' ) ) {
         wp_enqueue_style('style-meeting-minutes.css', get_template_directory_uri().'/css/style-meeting-minutes.css',false,'1.0','all');
     }
 
-    else if ( is_page_template( 'membership.php' ) ) {
+    else if ( is_page( 'membership' ) ) {
         wp_enqueue_style('style-membership.css', get_template_directory_uri().'/css/style-membership.css',false,'1.0','all');
     }
 
-    else if ( is_page_template( 'donate.php' ) ) {
+    else if ( is_page( 'donate' ) ) {
         wp_enqueue_style('style-donate.css', get_template_directory_uri().'/css/style-donate.css',false,'1.0','all');
     }
 
@@ -485,7 +485,7 @@ function custom_breadcrumbs() {
             // Category page
             echo '<li class="item-current item-cat"><strong class="bread-current bread-cat">' . single_cat_title('', false) . '</strong></li>';
 
-        } else if ( is_page_template() ) {
+        } else if ( is_page() ) {
 
             // Standard page
             if( $post->post_parent ){
