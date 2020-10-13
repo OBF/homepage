@@ -1492,6 +1492,10 @@ input#submit:active {
         grid-template-columns: 100%;
     }
 
+    .wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile.bosc-pear-submit{
+        grid-template-columns: 100%;
+    }
+
     .news-section ul,
     .fellowships-section ul {
         margin-left: 2%;
