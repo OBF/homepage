@@ -12,7 +12,9 @@ Template Name:bosc
 
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <?php the_content(); ?>
+        <h5 style="color:black;">
+            <?php the_content(); ?>
+        </h5>
         <?php endwhile; else : ?>
         <p>
             <?php __('No post found'); ?>
