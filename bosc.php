@@ -3,7 +3,11 @@
 Template Name:bosc
 */
 ?>
-
+<style>
+    h5{
+        color:black;
+    }
+</style>
 <?php get_header('bosc'); ?>
 
 <div class="showcase-wrapper">
@@ -12,7 +16,7 @@ Template Name:bosc
 
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <h5 style="color:black;">
+        <h5>
             <?php the_content(); ?>
         </h5>
         <?php endwhile; else : ?>
