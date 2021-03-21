@@ -28,7 +28,7 @@
                     <img src="<?php echo get_bloginfo('template_url') ?>/img/logos/obf_logo_icon-circle-tr.png">
                 </a>
                 <a class="navbar-logo" href="bosc">
-                    <img src="<?php echo get_bloginfo('template_url') ?>/img/logos/bosc-pear-transparent-square.png">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/img/logos/BOSC2021-square-icon-color.png">
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
