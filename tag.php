@@ -21,10 +21,10 @@
                 <?php the_title(); ?></a>
         </h2>
         <p>
-            <?php the_date(); ?> :
+            <?php echo get_the_date('F j, Y'); ?> :
             <?php the_excerpt(); ?>
         </p>
-        <?php endwhile;     
+        <?php endwhile;
             else: ?>
         <p>not working</p>
         <?php endif; ?>

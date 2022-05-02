@@ -15,15 +15,15 @@
         </div>
 
         <!--first post-->
-        <?php 
+        <?php
         $obf_exclude = get_cat_ID('home');
 
         $q = '-'.$obf_exclude;
-        
+
         $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-        
+
         $query = new WP_query ( array(
-            
+
             'posts_per_page' => 1,
             'cat' => $q,
             'post_type' => 'post',
@@ -45,7 +45,7 @@
                                     <?php the_title(); ?>
                                 </h1>
                                 <p class="date"> [
-                                    <?php the_date(); ?> ]</p>
+                                    <?php echo get_the_date('F j, Y'); ?> ]</p>
                                 <p>
                                     <?php the_excerpt(); ?>
                                 </p>
@@ -57,20 +57,20 @@
                 </div>
             </article>
             <?php } ?>
-            <?php endwhile; 
+            <?php endwhile;
                                      rewind_posts();
                                      ?>
-            <?php 
-                                     
+            <?php
+
                 wp_reset_postdata(); ?>
         </section>
 
         <?php } ?>
 
-        <?php 
+        <?php
         $obf_exclude = get_cat_ID('home');
         $q = '-'.$obf_exclude;
-        
+
         $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
         if ( $paged == 1 ){
       $offset=1;
@@ -85,7 +85,7 @@
             'offset' => $offset,
             'number_of_posts' => 15,
         ) );
-        
+
         if ( $query->have_posts() ) { ?>
         <section class="recent-posts grid-container">
             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -107,7 +107,7 @@ the_post_thumbnail();
                                     <?php echo wp_trim_words( get_the_title(), 5 ); ?>
                                 </h1>
                                 <p class="date"> [
-                                    <?php the_date(); ?> ]</p>
+                                    <?php echo get_the_date('F j, Y'); ?> ]</p>
                                 <p>
                                     <?php the_excerpt(); ?>
                                 </p>
@@ -123,8 +123,8 @@ the_post_thumbnail();
             <?php endwhile;
                     rewind_posts(); ?>
 
-            <?php 
-                                     
+            <?php
+
                 wp_reset_postdata(); ?>
         </section>
 
