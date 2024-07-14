@@ -639,10 +639,10 @@ tr:nth-child(1) {
 
 .bosc-footer-sub-section .networks {
     display: grid;
-    gap: 2px;
-    margin: 5px;
-    margin-left: 10px;
     grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    margin-bottom: 5px;
+    margin: auto;
+    gap: 2px;
 }
 
 .network-item {
