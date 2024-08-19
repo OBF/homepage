@@ -13,7 +13,7 @@ Template Name: meeting minutes
         <div>
         <p></p>Starting in July 2019, OBF Board public meeting minutes can be found in
             <a href="https://github.com/OBF/obf-docs/tree/master/minutes">our GitHub repository</a>.</p>
-            </div>
+        </div>
         <?php custom_breadcrumbs(); ?>
         <article>
             <?php $query2 = new WP_Query( array( 'category_name' => 'meeting-minutes' ) ); ?>
