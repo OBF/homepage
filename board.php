@@ -16,7 +16,9 @@ Template Name:board
             <div class="members-contact">
                 <p>The Board can be contacted via email at <a href="mailto:board@open-bio.org">board@open-bio.org</a> (or, in case of mailing list problems, try <a href="mailto:obf-board@googlegroups.com">obf-board@googlegroups.com</a> as a fallback)
                  You can also find us on <a href="https://www.linkedin.com/groups/9539620/">LinkedIn</a>.
-                    The minutes of the previous public Board meetings can be found <a href="/board/meeting-minutes/">here</a>.</p>
+                    The minutes of the previous public Board meetings can be found on
+                    <a href="https://github.com/OBF/obf-docs/tree/master/minutes">our GitHub repository</a>
+                    (pre-2019 meeting minutes are linked <a href="/board/meeting-minutes/">here</a>).</p>
             </div>
 
             <ul class="list-inline members-list">
