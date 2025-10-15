@@ -1,4 +1,6 @@
-# OBF Homepage New
+# OBSOLETE - old OBF WordPress website
+
+## Replaced in 2025 by https://github.com/OBF/OBF.github.io
 
 **Installation Guidelines**
 
